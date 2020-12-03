@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>headerwork</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+  
+<body style="background-color: #f7f7f7;">
+   
+  <nav class="navbar navbar-expand-sm   navbar-light" style="background-color:#eaeaea;">
+    <div class="container">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a routerLinkActive="active" routerLink="/home" class="nav-link" >flowered</a>
+     <!---   <a routerLinkActive="active" routerLink="/login">list</a>-->
+      
+        
+      </li>
+     </ul>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">  
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button routerLink="Login" class="btn btn-outline-success my-2 my-sm-0" type="submit"routerLinkActive="active" routerLink="/login" >Login</button>
+      </form>
+    </div>
+  </nav>
+  
+  <nav  class="navbar navbar-expand-sm  navbar-dark" style="background-color:wheat;">
+    <div class="container">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: black;">AllFlowers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: black;">Occasions</a>
+      </li>
+      </ul>
+     
+  <!-- Button trigger modal -->
+  <button type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-search"></i>
+   
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 2000px;" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search Products</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>What are you looking for</p>
+          <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Search Products" name="search" style="width: 1000px;">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </nav>
+</body>
+</html>

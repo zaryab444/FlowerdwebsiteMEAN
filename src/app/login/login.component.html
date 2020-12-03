@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Login Form</h2>
+
+<form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+  <label for="Email">Email:</label><br>
+  <input type="text" id="Email" name="Email" formControlName="email" email required>
+  <span *ngIf="formErrors.email" style="color: red;">{{formErrors.email}}</span>
+  <br>
+  
+
+  <label for="lname">Password:</label><br>
+  <input type="password" id="pass" name="pass" formControlName="password"  pattern="[0-9]*" required>
+  <span *ngIf="formErrors.password"style="color:red;">{{formErrors.password}}</span>
+  <br><br>
+ 
+  <button type="submit"  class="bg bg-primary" [disabled]="feedbackForm.invalid">Submit</button>
+</form> 
+
+<p>Do you have any account <a routerLinkActive="active" routerLink="/signup" class="nav-link" >Signup</a></p>
+
+</body>
+</html>
